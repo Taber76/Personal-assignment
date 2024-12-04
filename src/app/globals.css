@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -11,11 +13,20 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-roboto: 'Roboto', sans-serif;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
