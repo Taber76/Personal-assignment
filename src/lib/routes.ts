@@ -2,8 +2,8 @@ import { FaPlane, FaChartBar, FaUsers } from "react-icons/fa";
 
 export const routes = [
   {
-    title: "Inicio",
-    path: "/",
+    title: "Tablero",
+    path: "/dashboard",
     Icon: FaChartBar,
   },
   {
