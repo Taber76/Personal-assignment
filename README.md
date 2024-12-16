@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gestión de Personal de Asistencia en Aeropuertos ✈️
 
-## Getting Started
+Este proyecto es una solución web diseñada para optimizar la asignación de personal de tierra en aeropuertos, encargados de servicios como carga, descarga, escaleras, transporte y otros, tanto para vuelos de carga como de pasajeros.
 
-First, run the development server:
+## 🚀 Características principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Asignación automática**: Gestión automática de personal según el tipo de avión, operación (carga/pasajeros), y disponibilidad.
+- **Prevención de conflictos**: Asegura que el personal no sea asignado a vuelos simultáneos o solapados.
+- **Reasignación dinámica**: Manejo eficiente de atrasos, cancelaciones y cambios de horarios.
+- **Notificaciones en tiempo real**: Comunicación inmediata al personal sobre asignaciones y cambios.
+- **Dashboard intuitivo**: Monitoreo del estado de vuelos y asignaciones en tiempo real.
+- **Gestión de turnos**: Registro de horarios, descansos, y vacaciones del personal.
+- **Historial y reportes**: Registro detallado de operaciones y generación de informes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: [Next.js](https://nextjs.org/) con TypeScript.
+- **Backend**: API integrada en el mismo framework.
+- **Base de datos**: PostgreSQL.
+- **Estado global**: Context API o Zustand.
+- **Notificaciones**: WebSockets o servicios externos (Firebase, Twilio, etc.).
+- **Integraciones**: API de vuelos para sincronización en tiempo real.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📈 Objetivos del proyecto
 
-## Learn More
+1. Optimizar la logística de personal en aeropuertos.
+2. Reducir tiempos muertos y conflictos en la asignación.
+3. Mejorar la respuesta ante cambios en el cronograma de vuelos.
+4. Proveer una solución escalable para aeropuertos de distintos tamaños.
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Instalación y configuración
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Requisitos previos
+- Node.js (v18 o superior)
+- Gestor de paquetes (npm o yarn)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

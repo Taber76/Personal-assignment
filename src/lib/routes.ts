@@ -13,7 +13,7 @@ export const routes = [
   },
   {
     title: "Personal",
-    path: "/workers",
+    path: "/staff",
     Icon: FaUsers,
   },
 ];

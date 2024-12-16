@@ -15,7 +15,7 @@ const Dashboard = () => {
         <thead className="bg-gray-200 rounded-t-lg">
           <tr>
             <th className="border-b p-2 text-center">Vuelo</th>
-            <th className="border-b p-2 text-center">Llegada</th>
+            <th className="border-b p-2 text-center">Hora</th>
             <th className="border-b p-2 text-center">Tipo</th>
             <th className="border-b p-2 text-center">Estado</th>
             <th className="border-b p-2 text-center">Personal</th>

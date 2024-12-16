@@ -1,0 +1,17 @@
+INSERT INTO assignments_live (flight_id, staff_id)
+VALUES (1, 2);
+
+
+INSERT INTO flights_historical 
+SELECT * FROM flights_live WHERE id = 1;
+
+DELETE FROM flights_live WHERE id = 1;
+
+
+INSERT INTO assignments_historical (flight_id, staff_id, assigned_at, unassigned_at)
+SELECT flight_id, staff_id, assigned_at, CURRENT_TIMESTAMP
+FROM assignments_live
+WHERE flight_id = 1;
+
+DELETE FROM assignments_live WHERE flight_id = 1;
+
